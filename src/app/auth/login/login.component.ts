@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { loginAction } from './ngrx/login.action';
 import { INgrState } from 'src/app/redux/ngrx/store';
-import { CONSTANCE } from 'src/app/utils/constance';
+import { CONSTANT } from 'src/app/utils/constant';
 import { UserNameValidators } from 'src/app/validators/trim';
 
 @Component({
@@ -37,7 +37,7 @@ export class LoginComponent implements OnInit {
       username: [null, [Validators.required, UserNameValidators()]],
       password: [
         null,
-        [Validators.required, Validators.pattern(CONSTANCE.REGEX.PASSWORD)],
+        [Validators.required, Validators.pattern(CONSTANT.REGEX.PASSWORD)],
       ],
     });
   }
@@ -45,7 +45,6 @@ export class LoginComponent implements OnInit {
   onLogin() {
     this.submitted = true;
     if (this.loginForm.valid) {
-      // NOTE: dispatching login action
       this.store.dispatch(loginAction(this.loginForm.value));
     }
   }

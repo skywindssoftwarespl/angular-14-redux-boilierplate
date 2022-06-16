@@ -16,7 +16,7 @@ const initialState = {
 
 const _loginReducer = createReducer(
   initialState,
-  on(loginAction, (state: any) => {
+  on(loginAction, (state) => {
     return { ...state, token: 'TOKEN' };
   })
 );

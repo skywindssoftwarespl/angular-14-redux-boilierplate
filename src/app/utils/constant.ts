@@ -1,4 +1,4 @@
-export const CONSTANCE = {
+export const CONSTANT = {
   REGEX: {
     PASSWORD: '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$',
   },

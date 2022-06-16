@@ -1,4 +1,4 @@
-import { CONSTANCE } from './../utils/constance';
+import { CONSTANT } from './../utils/constant';
 import { LoginService } from './login/login.service';
 import { Injectable } from '@angular/core';
 
@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 export class AuthService {
   constructor(private login: LoginService) {}
 
-  key: string = CONSTANCE.STORAGE_KEYS.TOKEN;
+  key: string = CONSTANT.STORAGE_KEYS.TOKEN;
 
   storeToken(token: string) {
     localStorage.setItem(this.key, token);
