@@ -1,0 +1,36 @@
+@import "../../../variable.scss";
+.left-panel {
+    background-color: whitesmoke;
+    width: $sidebar-left-panel-width;
+    height: $sidebar-left-panel-height !important;
+    text-align: $sidebar-left-panel-text-align;
+    box-shadow: $sidebar-left-panel-box-shadow;
+    overflow: $sidebar-left-panel-overflow;
+    position: $sidebar-left-panel-position;
+    top: $sidebar-left-panel-top-margin;
+}
+
+.admin-menu {
+    cursor: pointer;
+    border-radius: $sidebar-menu-item-border-radius;
+}
+
+.subMenu-items {
+    margin: 10px;
+    margin-left: 45px;
+}
+
+.sidebar-menu-position {
+    margin-top: -35px;
+    margin-left: 33px;
+}
+
+.flex {
+    display: flex;
+}
+
+.sidebar-item {
+    // padding: 7px 0px;
+    padding: $sidebar-active-padding;
+    align-items: center;
+}

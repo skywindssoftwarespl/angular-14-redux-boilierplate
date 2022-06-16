@@ -1,0 +1,23 @@
+<div class="d-flex" style="margin-top: -20px;">
+    <div class="left-panel">
+        <div class="left-menu">
+            <div class="menu-item" *ngFor="let menu of sidebar">
+                <div (click)="onClick(menu)" routerLink={{menu.path}} routerLinkActive="active" [routerLinkActiveOptions]="{ exact: false }">
+                    <div class="flex sidebar-item">
+                        <span class="material-icons pr-10"> {{menu.icon}} </span>
+                        <div> {{menu.name}} </div>
+                    </div>
+                    <!-- <tr>
+                        <td class="pr-10">
+                            <span class="material-icons"> {{menu.icon}} </span>
+                        </td>
+                        <td>
+                            {{menu.name}}
+                        </td>
+                    </tr> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

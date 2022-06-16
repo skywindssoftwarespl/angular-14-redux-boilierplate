@@ -1,0 +1,22 @@
+[{
+        "id": 1,
+        "name": "Dashboard",
+        "value": "Dashboard",
+        "icon": "home",
+        "path": "/dashboard"
+    },
+    {
+        "id": 2,
+        "name": "Settings",
+        "value": "Settings",
+        "icon": "settings",
+        "path": "/settings"
+    },
+    {
+        "id": 3,
+        "name": "Profile",
+        "value": "Profile",
+        "icon": "people",
+        "path": "/profile"
+    }
+]
