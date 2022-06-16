@@ -11,7 +11,6 @@ import { loginAction } from './login.action';
 export class loginEffect {
   constructor(
     private action$: Actions,
-    private loginService: LoginService,
     private authService: AuthService,
     private userService: UserService,
     private router: Router

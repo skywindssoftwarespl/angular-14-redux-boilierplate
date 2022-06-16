@@ -9,12 +9,15 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   //returned dummy observable
+  //dummy api_end_point can be used here
   post(): Observable<any> {
     const observable = new Observable((sub) => {
       sub.next('token');
     });
     return observable;
   }
+
+  //Dummy http methods
   get = <O>(url: string, params?: any) => this.http.get<O>(url, { params });
 
   patch = <I, O = I>(url: string, data: I, params?: any) =>
