@@ -1,3 +1,4 @@
+import { CONSTANT } from 'src/app/utils/constant';
 import { loginAction } from './login.action';
 import { ILogin } from './../../../shared/models/auth';
 import { Action, createReducer, on } from '@ngrx/store';
@@ -17,7 +18,7 @@ const initialState = {
 const _loginReducer = createReducer(
   initialState,
   on(loginAction, (state) => {
-    return { ...state, token: 'TOKEN' };
+    return { ...state, token: CONSTANT.STORAGE_KEYS.TOKEN };
   })
 );
 
