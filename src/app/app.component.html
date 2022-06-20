@@ -1,0 +1,4 @@
+<app-navbar *ngIf="login.enableTheme |async"></app-navbar>
+<router-outlet></router-outlet>
+<app-sidebar *ngIf=" login.enableTheme |async ">
+</app-sidebar>
