@@ -2,8 +2,8 @@
     "COMMON": {
         "TITLE": {
             "DASHBOARD": "Dashboard",
-            "SETTINGS": "Settings",
-            "PROFILE": "Profile"
+            "PROFILE": "Profile",
+            "SETTINGS": "Settings"
         }
     }
 
