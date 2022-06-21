@@ -1,5 +1,7 @@
 import { LoginService } from './service/login/login.service';
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { CONSTANT } from './utils/constant';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(public login: LoginService) {}
-  title = 'angular-redux-boilerplate';
+  language = CONSTANT.LANGUAGE.map((data) => data.value);
+  constructor(public login: LoginService, public translate: TranslateService) {
+    translate.addLangs(this.language);
+    translate.setDefaultLang(this.language[0]);
+  }
 }

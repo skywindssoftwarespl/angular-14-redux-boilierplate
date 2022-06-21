@@ -1,0 +1,10 @@
+{
+    "COMMON": {
+        "TITLE": {
+            "DASHBOARD": "Dashboard",
+            "PROFILE": "Profile",
+            "SETTINGS": "Settings"
+        }
+    }
+
+}

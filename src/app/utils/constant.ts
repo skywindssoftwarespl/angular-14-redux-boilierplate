@@ -5,4 +5,16 @@ export const CONSTANT = {
   STORAGE_KEYS: {
     TOKEN: 'token',
   },
+  LANGUAGE: [
+    {
+      id: 1,
+      label: 'English',
+      value: 'en',
+    },
+    {
+      id: 2,
+      label: 'French',
+      value: 'fr',
+    },
+  ],
 };
