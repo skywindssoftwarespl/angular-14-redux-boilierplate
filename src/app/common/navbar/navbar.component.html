@@ -1,0 +1,20 @@
+<nav class="uk-navbar-container navbar-shadow" uk-navbar>
+    <div class="uk-navbar-left navbar">
+        <img src="./assets/image/Angular.png" alt="logo" class="logo">
+        <div class="uk-inline uk-position-right">
+            <div class="uk-button uk-form-select" data-uk-form-select>
+                <select #langSelect (change)="onLangChange(langSelect.value)" class="uk-button uk-form-select" data-uk-form-select>
+          <option *ngFor="let lang of languages" value={{lang.value}} [selected]="lang.value === translate.currentLang">
+            {{ lang.label}}
+          </option>
+        </select>
+                <span class="material-icons pr-10 icon-position">expand_more</span>
+            </div>
+            <button class="uk-button-default dropdown" type="button">
+        H </button>
+            <div class="logout" uk-dropdown="mode: click">
+                <p (click)="onLogout()">Logout</p>
+            </div>
+        </div>
+    </div>
+</nav>

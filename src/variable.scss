@@ -1,0 +1,25 @@
+// sidebar common css
+$sidebar-width: 70px;
+$sidebar-margin-top: 50px;
+$sidebar-margin-left: 200px;
+$sidebar-icon-padding: 10px;
+$sidebar-left-menu: 50px 20px 20px 20px;
+$sidebar-font-size: 14px;
+$sidebar-menu-item-border-radius: 10px;
+$sidebar-active-background-color: #d1cabe !important;
+$sidebar-active-padding: 6px 7px;
+$sidebar-active-border-radius: 10px;
+$sidebar-left-panel-width: 200px;
+$sidebar-left-panel-height: 100vh;
+$sidebar-left-panel-position: fixed;
+$sidebar-left-panel-text-align: left;
+$sidebar-left-panel-box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2),
+0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$sidebar-left-panel-overflow: auto;
+$sidebar-left-panel-top-margin: 40px;
+// navbar common css
+$navbar-padding: 10px;
+// logo common css
+$logo-width: 35px;
+$logo-margin-left: 10px;
+$logo-cursor: pointer;
